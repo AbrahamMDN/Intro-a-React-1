@@ -1,0 +1,80 @@
+/* Estilo Principal */
+body {
+  background-color: #1b1b1b;
+  color: #e0dede;
+  font-family: 'Cinzel', serif;
+  background: url('https://i.pinimg.com/736x/b4/5d/ff/b45dff495b018e547163232b0ff338b6.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding: 2rem;
+  backdrop-filter: blur(2px);
+}
+
+/* Títulos */
+h1, h2, h3 {
+  color: #d4af37;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* Botones */ 
+button {
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #555;
+  padding: 0.6em 1.2em;
+  margin: 0.5em;
+  font-size: 1.1em;
+  font-family: 'Cinzel', serif;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+/* Botón seleccionado */
+button:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+/* Botón desactivado */
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Input para incremento*/
+input[type="number"] {
+  padding: 0.4em;
+  font-size: 1em;
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 4px;
+  margin-left: 0.5em;
+  width: 80px;
+}
+
+/* Listado del historial */
+ul {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 5px;
+  list-style: square;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #444;
+}
+
+/* Advertencia */
+p {
+  margin-top: 1em;
+  color: #ff5c5c;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000;
+}
+
+/* Capa contenedora transparente */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 100vh;
+  padding: 2rem;
+}
