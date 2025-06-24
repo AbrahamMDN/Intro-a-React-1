@@ -1,3 +1,4 @@
+// Importación de componentes funcionales, hooks y estilos
 import React, { useState, useEffect } from 'react';
 import InputNumber from './InputNumber';
 import Message from './Message';
@@ -5,6 +6,7 @@ import RestartButton from './RestartButton';
 import GuessHistory from './GuessHistory';
 import '../styles/game.css';
 
+// Definición del Componente Principal: estados, efectos, acciones, estructura
 const Game = () => {
   const [secretNumber, setSecretNumber] = useState(null);
   const [userGuess, setUserGuess] = useState('');
@@ -15,7 +17,7 @@ const Game = () => {
 
   const MAX_ATTEMPTS = 10;
 
-  // Inicializa el número aleatorio
+  // Función que inicializa el número aleatorio
   const generateRandomNumber = () => {
     const random = Math.floor(Math.random() * 100) + 1;
     setSecretNumber(random);
@@ -26,14 +28,17 @@ const Game = () => {
     setHistory([]);
   };
 
+  // Ejecuta la función que crea el número aleatorio
   useEffect(() => {
     generateRandomNumber();
   }, []);
 
+  // Manejo del input dado por el usuario
   const handleInputChange = (e) => {
     setUserGuess(e.target.value);
   };
 
+  // Evaluación del input del usuario
   const checkGuess = () => {
     if (gameOver) return;
 
@@ -64,7 +69,7 @@ const Game = () => {
       setFeedback(result);
     }
 
-    setHistory((p) => [...p, { guess, result }]);
+    setHistory((p) => [...p, { guess, result }]); // Adición de intentos al historial
 
   };
 

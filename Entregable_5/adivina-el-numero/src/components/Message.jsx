@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Creación del componente que maneja la estructura y lógica del mensaje de Feedback
 const Message = ({ feedback }) => {
   if (!feedback) return null;
 

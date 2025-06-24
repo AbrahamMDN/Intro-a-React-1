@@ -1,3 +1,4 @@
+/* Estilo Principal */
 body {
   background: linear-gradient(to right, #0f0f1a, #1a1a2e);
   font-family: 'Orbitron', sans-serif;
@@ -10,6 +11,7 @@ body {
   align-items: center;
 }
 
+/* Contenedor Principal */
 .game-container {
   background-color: #111;
   padding: 2rem;
@@ -20,6 +22,7 @@ body {
   text-align: center;
 }
 
+/* Input del usuario */
 input[type="number"] {
   background-color: #222;
   border: 2px solid #0ff;
@@ -31,6 +34,7 @@ input[type="number"] {
   margin-right: 10px;
 }
 
+/* Botones */
 button {
   background-color: #0ff;
   color: #000;
@@ -44,15 +48,18 @@ button {
   margin-top: 2%;
 }
 
+/* Botones resaltados */
 button:hover {
   background-color: #00ffff80;
 }
 
+/* Contenedor del mensaje de feedback */
 p {
   font-size: 1.2rem;
   margin-top: 1rem;
 }
 
+/* Listado de intentos */
 ul {
   list-style: none;
   padding-left: 0;
@@ -60,6 +67,7 @@ ul {
   margin-top: 1rem;
 }
 
+/* Intentos individuales */
 li {
   background: #222;
   border-left: 5px solid #0ff;

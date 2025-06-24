@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Creación del componente que maneja la estructura del input del usuario 
 const InputNumber = ({ value, onChange, onCheck, disabled }) => {
   return (
     <div>

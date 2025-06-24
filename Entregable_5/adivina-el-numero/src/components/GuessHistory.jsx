@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Creación del componente que maneja la estructura del historial
 const GuessHistory = ({ history }) => {
   if (history.length === 0) return null;
 
