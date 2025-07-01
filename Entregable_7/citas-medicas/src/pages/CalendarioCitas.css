@@ -1,0 +1,34 @@
+/* Personalización de clase para los días con citas */
+.dia-con-cita {
+  background: #bb1239 !important;
+  color: white !important;
+  border-radius: 50%;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+/* Selección del día con citas */
+.dia-con-cita:hover {
+  background: #43041d !important;
+}
+
+/* Formato para calendario evitando que herede estilos no deseados */
+.calendario-wrapper .react-calendar {
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  background: #010a10
+}
+
+/* Formato para el día actual (en curso) sobre el calendario */
+.calendario-wrapper .react-calendar__tile--now {
+  background: #e6f0ff  !important;
+  color: #003366;
+}
+
+/* Formato para el día en donde se encuentra el apuntador sobre el calendario */
+.calendario-wrapper .react-calendar__tile--active {
+  background: #0078d4 !important;
+  color: white !important;
+}
