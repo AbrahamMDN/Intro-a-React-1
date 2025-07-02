@@ -1,0 +1,180 @@
+/* Definición de colores básicos para el estilo del sitio */
+:root {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --accent-color: #1d9bf0;
+  --border-color: #2f3336;
+}
+
+/* Estilos Principales */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Contenedor principal */
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  min-height: 100vh;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  border-bottom: 1px solid var(--border-color);
+  background-color: #000;
+}
+
+/* Enlaces de la barra de navegación */
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Botón de la navbar */
+nav button {
+  background: none;
+  border: none;
+  color: var(--accent-color);
+  cursor: pointer;
+  height: 5px;
+  margin-top: -8px;
+}
+
+/* Selección del botón de la navbar */
+nav button:hover {
+  background: none;
+  border: none;
+  color: rgb(53, 53, 183);
+  cursor: pointer;
+  height: 5px;
+  margin-top: -8px;
+}
+
+/* Elemento tweet*/
+.tweet {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Foto del usuario en el tweet */
+.tweet img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Campo del autor del tweet */
+.tweet small {
+  font-size: 14px;
+  color: #58a5d8;
+}
+
+/* Contenido del tweet */
+.tweet p {
+  margin: 4px 0;
+  font-size: 15px;
+}
+
+/* Botones del menú de inicio */
+button {
+  background-color: var(--accent-color);
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  margin: 8px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Selección de botón de cierre de sesión en menú de inicio */ 
+.logoutbutton:hover {
+  background-color: #191818;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  margin: 8px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Botón de like para tweets */
+.likebutton {
+  background-color: #e04b4b;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  margin: 8px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Selección de botón de like */
+.likebutton:hover {
+  background-color: #e63131;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  margin: 8px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Selección de botones para publicación de tweet e inicio de sesión */
+.twittebutton:hover, .loginbutton:hover {
+  background-color: #19c9e4;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  margin: 8px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Selección de botones para visualización del feed personal y global */ 
+.viewbutton:hover {
+  background-color: #26606a;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  margin: 8px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Campo de entrada para el tweet */
+input[type="text"] {
+  width: 81%;
+  padding: 12px;
+  background-color: #16181c;
+  border: 1px solid var(--border-color);
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* Responsive y animaciones */
+@media (max-width: 600px) {
+  .app-container {
+    border: none;
+    padding: 10px;
+  }
+}
